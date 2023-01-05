@@ -23,12 +23,12 @@ export class RecipesService {
   ];
 
   getAllRecipes() {
-    return [...this.recipes]; // this returns a copy of the private array 
+    return [...this.recipes]; // this returns a copy of the private array
   }
 
-  getRecipe(recipeId: string) {
+  getRecipe(recipeId: any) {
     return {...this.recipes.find((recipe) => recipe.id === recipeId)} // same deal as above
   }
 
   constructor() {}
-}
+} 
