@@ -2,12 +2,15 @@
   <ion-toolbar color="primary">
     <ion-title>Recipes</ion-title>
   </ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-back-button defaultHref="/recipes"></ion-back-button>
+  </ion-buttons>
 </ion-header>
 
 <ion-content>
   <ion-grid class="ion-no-padding">
     <ion-row>
-      <ion-col> <ion-img class="ion-no-padding" [src]="loadedRecipe.imageUrl" style="width:75%; height:75%; margin:auto;"></ion-img> </ion-col>
+      <ion-col> <ion-img class="ion-no-padding" [src]="loadedRecipe.imageUrl" style="width:300px; height:300px; margin:auto;"></ion-img> </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
